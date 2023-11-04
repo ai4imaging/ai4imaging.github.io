@@ -523,7 +523,7 @@ a:focus {
 .major {
   border-bottom: solid 3px #0664cd;
   padding-bottom: 10px;
-
+  margin-left: 15px;
   margin-top: 40px;
   margin-bottom: 10px;
 }
