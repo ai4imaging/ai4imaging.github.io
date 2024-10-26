@@ -1,104 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Basic -->
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!-- Mobile Metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <!-- Site Metas -->
-    <meta name="keywords" content="" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-
-    <title>PKU Computational Scientific Imaging</title>
-
-    <!-- bootstrap core css -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-
-    <!-- fonts style -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
-    <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet" />
-    <!-- responsive style -->
-    <link href="css/responsive.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teaching</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/traching.css">
 </head>
-
-<body class="sub_page">
-<div class="hero_area">
-      <div class="include" file="head.html"></div>
-
-</div>
-
-
-<div class="body_bg layout_padding">
-
-    <section class="feature" id="research">
-        <div class="container">
-
-
-            <div class="row">
-
-                <div class="people_list">
-
-                    <div class=" row mb-5" data-aos="fade-up" data-aos-delay="200">
-                        <div class="people_introduce">
-                            <h4 class="title">反问题与计算成像 - Inverse Problems and Computational Imaging</h4>
-<!--                            <div>Fall 2023</div>-->
-                            <div class="people_introduce mt-3" style="font-size: 1.2rem">
-                                反问题广泛应用于许多科学和工程领域，需要从一组带有噪声的测量数据中推断观测目标的状态。各种成像系统，如医疗超声、X射线断层扫描、超分辨显微镜等，是反问题求解的最主要的应用场景之一。本课程旨在介绍反问题的理论及其在成像问题中的求解方法，培养学生对科研中计算成像问题的建模和求解能力。课程内容分为四个模块，分别介绍优化方法与正则化、概率推断、深度学习和经典的成像应用。课程也将通过四次大作业，培养学生反问题求解的算法设计和编程能力。
-                                <div style="font-size: 1rem;padding-left: 2rem">
-                                    <div style="margin-top: 10px"><strong>课程大纲：</strong></div>
-                                        <div>第一周：计算成像和反问题概述</div>
-                                        <div><strong>模块一：优化方法与正则化（第二周-第四周）</strong></div>
-                                        <div>第二周：基础知识：函数空间、凸分析、线性回归及其变种等</div>
-                                        <div>第三周：凸优化：线性规划、二次规划，拉格朗日乘子法、对偶问题、KKT条件等</div>
-                                        <div>第四周：约束优化：L1正则化、Tikhinov正则化、全变分正则化、梯度下降法、近端梯度法等</div>
-                                        <div><strong>模块二：概率建模与统计推断（第五周-第八周）</strong></div>
-                                        <div>第五周：贝叶斯推断：贝叶斯公式、最大似然估计（MLE）、最大后验估计（MAP）等</div>
-                                        <div>第六周：含时的贝叶斯推断：Kalman滤波、Kalman平滑、粒子滤波等</div>
-                                        <div>第七周：后验概率估计：重要性采样、马尔可夫链蒙特卡洛（MCMC）采样等</div>
-                                        <div>第八周：变分贝叶斯方法</div>
-                                        <div><strong>模块三：深度学习（第九周-第十二周）</strong></div>
-                                        <div>第九周：经典神经网络框架：MLP、ResNet、UNet等</div>
-                                        <div>第十周：深度生成模型-1：变分自解码器（VAE）、生成对抗网络（GAN）</div>
-                                        <div>第十一周：深度生成模型-2：归一化流（Normalizing Flow）、扩散模型（Diffusion Model）</div>
-                                        <div>第十二周：前沿神经网络框架：Transformer、隐式神经表示（INR）等</div>
-                                        <div><strong>模块四：成像中的反问题</strong></div>
-                                        <div>第十三周：成像应用-1：降噪、补全、超分辨、压缩感知等</div>
-                                        <div>第十四周：成像应用-2：CT、相位恢复、反散射（全波反演）等</div>
-                                        <div>第十五周：前沿成像论文选读-1</div>
-                                        <div>第十六周：前沿成像论文选读-2</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <img alt="" style="width: 100%" src="images/teaching0.jpg">
+<body>
+<div style="height: 100px">
+    <header>
+        <nav>
+            <a href="./index.html" class="nav-logo" style="margin-right: 31px">
+                Computational Scientific <br>
+                Imaging LAB <span class="nav-red">@ Peking University</span>
+            </a>
+            <a href="./index.html" class="tab">Home</a>
+            <div class="dropdown">
+                <a href="#" class="tab">Research</a>
+                <div class="dropdown-content" id="dropdown">
+                    <a href="./direction.html" style="font-size: 14px;line-height: 30px;">Research direction</a>
+                    <a href="./application.html" style="font-size: 14px;line-height: 30px;">Scientific application</a>
                 </div>
-
-
             </div>
-        </div>
-    </section>
-
-    <!-- end service section -->
-
+            <a href="./publication.html" class="tab ">Publication</a>
+            <a href="./team.html" class="tab">Team</a>
+            <a href="./teaching.html" class="tab tabActive">Teaching</a>
+            <a href="./opportunities.html" class="tab">Research opportunities</a>
+        </nav>
+    </header>
 </div>
-<!-- end about section -->
 
-
-<!-- footer section -->
-<footer class="container-fluid footer_section">
-    <p>
-        &copy; 2023 PCSIG
-    </p>
-</footer>
-<!-- footer section -->
-
-<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.js"></script>
-<script type="text/javascript" src="js/tools.js"></script>
-
-
+<section id="home " class="section w">
+    <div class="p-box">
+        <img src="./image/traching1.png" class="p-item-img" alt="">
+        <div>
+            <div style="display: flex;justify-content: space-between">
+                <p class="p-item-title">23310067: Inverse Problems and Computational Imaging (24 Fall, 23 Fall)</p>
+                <img src="./image/down.png" class="down toggleArrow" width="24" height="24" style="margin-top: 10px;display: none" alt="">
+                <img src="./image/up.png"  class="up toggleArrow" width="24" height="24" style="margin-top: 10px;" alt="">
+            </div>
+            <p class="p-item-content">TA: Weimin Bai, Enze Ye</p>
+            <p class="p-item-time">Inverse problems are widely applied in many fields of science and engineering, requiring the inference of the state of an observed target from a set of noisy measurement data. Various imaging systems, such as medical ultrasound, X-ray computed tomography, and super-resolution microscopy, are among the primary application scenarios for solving inverse problems. This course aims to introduce the theory of inverse problems and the methods for solving imaging issues, cultivating students' abilities in modeling and solving computational imaging problems in research. The course content is divided into four modules, covering optimization methods and regularization, probabilistic inference, deep learning, and classical imaging applications. Additionally, the course will include four major assignments to develop students' skills in algorithm design and programming for solving inverse problems.</p>
+        </div>
+    </div>
+    <div class="parting-line"></div>
+    <div class="p-box" style="margin-bottom: 65px">
+        <img src="./image/traching2.png" class="p-item-img" alt="">
+        <div>
+            <div style="display: flex;justify-content: space-between">
+                <p class="p-item-title">23310072: Adaptive Optics：Principles & Applications（24 Spring）</p>
+                <img src="./image/down.png" class="down toggleArrow" width="24" height="24" style="margin-top: 10px;display: none" alt="">
+                <img src="./image/up.png"  class="up toggleArrow" width="24" height="24" style="margin-top: 10px;" alt="">
+            </div>
+            <p class="p-item-content">TA: Jinxin Liu</p>
+            <p class="p-item-time">
+                Adaptive optics technology is an important means of correcting optical aberrations in imaging systems. Adaptive optics originated from ground-based astronomical telescopes, used to compensate for high-speed phase fluctuations caused by atmospheric turbulence, directly leading to significant scientific achievements worthy of a Nobel Prize, such as the discovery of the supermassive black hole. In recent years, adaptive optics technology has gradually found widespread applications in the biomedical field, particularly achieving a series of important breakthroughs in ophthalmic imaging and microscopic imaging. This course aims to introduce the principles and applications of adaptive optics, combining classroom instruction with literature review to cultivate students' ability to apply this technology to solve practical research problems.</p>
+        </div>
+    </div>
+</section>
+<script src="./js/drow.js"></script>
+<script src="./js/teaching.js"></script>
 </body>
 </html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/reserach.css">
+
+</head>
+<body>
+<div style="height: 100px">
+    <header>
+        <nav>
+            <a href="./index.html" class="nav-logo" style="margin-right: 31px">
+                Computational Scientific <br>
+                Imaging LAB <span class="nav-red">@ Peking University</span>
+            </a>
+            <a href="./index.html" class="tab">Home</a>
+            <div class="dropdown">
+                <a href="#" class="tab tabActive">Research</a>
+                <div class="dropdown-content" id="dropdown">
+                    <a href="./direction.html" style="font-size: 14px;line-height: 30px;">Research direction</a>
+                    <a href="./application.html" style="font-size: 14px;line-height: 30px;">Scientific application</a>
+                </div>
+            </div>
+            <a href="./publication.html" class="tab ">Publication</a>
+            <a href="./team.html" class="tab">Team</a>
+            <a href="./teaching.html" class="tab">Teaching</a>
+            <a href="./opportunities.html" class="tab">Research opportunities</a>
+        </nav>
+    </header>
+</div>
+
+<section id="home " class="section w" style="margin-bottom: 65px">
+    <h3 class=" h-title">Research directions</h3>
+
+    <div style="width: 108px;height: 4px;background: #000;margin: 23px 0 39px"></div>
+
+    <p class="s-content">
+        Imaging technology decodes wave-matter interactions and plays a critical role in scientific discoveries. In
+        turn, these discoveries also motivated new scientific goals that require imaging in extreme conditions, such as
+        extreme time scales and extreme resolutions. Our research focuses on computational imaging for science, which
+        leverages the innovative co-design of hardware and algorithms to develop next-generation scientific imaigng
+        instrument. Our work emphasizes both solid theoretical foundations and real impacts in scientific missions.
+        Current lines of investigation include:
+    </p>
+
+<!--    <h3 class=" h-title" style="margin-top: 66px;margin-bottom: 23px">Research directions</h3>-->
+<!--    <br><br>-->
+    <div class="parting-line"></div>
+    <div style="display: flex;gap: 23px">
+        <img src="./image/s1.png" style="width: 335px;height: 210px" alt="">
+        <div>
+            <p class="c-title">Neural PDE - Understanding Imaging Physics</p>
+            <p class="c-content">Partial Differential Equations (PDEs) are essential tools for modeling complex imaging
+                physics, which play critical roles in accurately reconstructing images from noisy data in scientific
+                imaging. Neural PDE solvers have recently transformed PDE-based physical modeling, offering both
+                powerful approximation capabilities and enhanced computational efficiency. Our research explores neural
+                PDE methods to tackle unresolved scientific imaging challenges, such as medical ultrasound and 3D
+                optical diffraction tomography. Key areas of focus include:</p>
+            <p class="c-tip">·&nbsp;Neural PDE based physical modeling</p>
+            <p class="c-tip">·&nbsp;Deep generative priors</p>
+            <p class="c-tip">·&nbsp;3D neural representations</p>
+        </div>
+    </div>
+
+    <div class="parting-line"></div>
+    <div style="display: flex;gap: 23px">
+        <img src="./image/s2.png" style="width: 335px;height: 210px" alt="">
+        <div>
+            <p class="c-title">Generative AI - Modeling Image Priors</p>
+            <p class="c-content">
+                Generative AI offers powerful tools for modeling complex image distributions using deep neural networks.
+                Leveraging generative AI, we can define powerful data-driven image priors that surpass traditional
+                hand-crafted priors (e.g., sparsity, total variation), achieving better computational image
+                reconstruction qualities. Related research topics include:
+            </p>
+            <p class="c-tip">·&nbsp; Deep generative models (e.g., diffusion models, normalizing flows)
+            </p>
+            <p class="c-tip">·&nbsp; Neural representations (e.g., neural fields, 3DGS) for imaging
+            </p>
+            <p class="c-tip">·&nbsp; (Multi-modal LLMs for imaging)
+            </p>
+        </div>
+    </div>
+
+    <div class="parting-line"></div>
+    <div style="display: flex;gap: 23px">
+        <img src="./image/s3.png" style="width: 335px;height: 210px" alt="">
+        <div>
+            <p class="c-title">Adaptive Optics - Automating Imaging Systems</p>
+            <p class="c-content">Adaptive optics (AO) is a control system that removes the wavefront aberrations in
+                optical systems. It is very important in microscopy for imaging thick biological samples and in
+                telescopy for imaging through atmospheric turbulence. Topics include:</p>
+            <p class="c-tip">·&nbsp; Astronomical adaptive optics (e.g., coronagraphic imaging instrument)
+            </p>
+            <p class="c-tip">·&nbsp; Microscopic adaptive optics
+            </p>
+            <p class="c-tip">·&nbsp; Machine learning-based adaptive optics
+            </p>
+        </div>
+    </div>
+
+
+</section>
+<script src="./js/drow.js"></script>
+
+</body>
+</html>

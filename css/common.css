@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.w{
+    width: 1236px;
+    margin: 0 auto;
+}
+
+@font-face {
+    font-family: 'HarmonyOS Sans Bold';
+    src: url('../font/HarmonyOS_Sans/HarmonyOS_Sans_Bold.ttf') format('woff');
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'HarmonyOS Sans-Regular';
+    src: url('../font/HarmonyOS_Sans/HarmonyOS_Sans_Regular.ttf') format('woff');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'HarmonyOS Sans-Medium';
+    src: url('../font/HarmonyOS_Sans/HarmonyOS_Sans_Medium.ttf') format('woff');
+    font-weight: normal;
+}
+
+body {
+    font-family: 'HarmonyOS Sans Bold', sans-serif; /* 使用本地字体 */
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+/* 隐藏内联滚动条 */
+pre {
+    overflow: -moz-scrollbars-none;  /* Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+.h-title {
+    line-height: 72px;
+    font-size: 48px;
+    margin: 33px auto 25px
+}
+.parting-line{
+    height: 1px;
+    margin: 37px 0 57px;
+    background: #E1E1E1;
+}

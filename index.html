@@ -1,84 +1,289 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
-
+<html lang="en">
 <head>
-  <!-- Basic -->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- Mobile Metas -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <!-- Site Metas -->
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
-
-  <title>PKU Computational Scientific Imaging Lab</title>
-
-  <!-- slider stylesheet -->
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="swiper/swiper-bundle.min.css">
 
 
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-
-  <!-- fonts style -->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
-  <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet" />
-  <!-- responsive style -->
-  <link href="css/responsive.css" rel="stylesheet" />
-  <link rel="icon" href="images/pku.png">
 </head>
-
 <body>
-<div class="hero_area">
-  <div class="include" file="head.html"></div>
-
+<div style="height: 100px">
+    <header>
+        <nav>
+            <a href="/" class="nav-logo" style="margin-right: 31px">
+                Computational Scientific<br>
+                Imaging LAB <span class="nav-red">@ Peking University</span>
+            </a>
+            <a href="./index.html" class="tab tabActive">Home</a>
+            <div class="dropdown">
+                <a href="#" class="tab ">Research</a>
+                <div class="dropdown-content" id="dropdown">
+                    <a href="./direction.html" style="font-size: 14px;line-height: 30px;">Research direction</a>
+                    <a href="./application.html" style="font-size: 14px;line-height: 30px;">Scientific application</a>
+                </div>
+            </div>
+            <a href="./publication.html" class="tab ">Publication</a>
+            <a href="./team.html" class="tab">Team</a>
+            <a href="./teaching.html" class="tab">Teaching</a>
+            <a href="./opportunities.html" class="tab">Research opportunities</a>
+        </nav>
+    </header>
 </div>
 
-<section class="about section" id="about" style="padding-bottom: 15px">
-  <div class="container">
-    <div class="row">
+<!-- 首页 -->
+<section id="home" class="section" >
+    <!-- 首页轮播 -->
+    <div class="home-carousel">
+        <div class="swiper" style="position: relative;width: 100vw; overflow: hidden; height: 750px;">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./image/banner1.png" style="width: 100vw;height: 900px" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./image/banner2.png" style="width: 100vw ;height: 900px" alt="">
 
-      <div  style="text-align: justify">
-        <h2 class = "welcome" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);">Welcome to PKU Computational Scientific Imaging Group!</h2>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./image/banner3.png" style="width: 100vw;height: 900px" alt="">
 
-        <p class="content">Computational Imaging is a vibrant and rapidly growing research area at the intersection of computer science, physical science, and instrumentation. Our group pioneers the development of advanced algorithms and innovative hardware to facilitate future scientific imaging at extreme scales. Our scope of work extends across multiple scientific disciplines, ranging from biomedical imaging to astronomy. Our research is inherently interdisciplinary and our extensive expertise bridges optics, deep learning, computer vision/graphics, statistical inference, and hardware design.
-        </p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./image/banner4.png" style="width: 100vw;height: 900px" alt="">
+                </div>
+            </div>
+            <img src="./image/garybg.png" style="position: absolute;top: 0;left: 0;width: 100vw;z-index: 1;height: 750px" alt="">
+            <div class="slide-caption" style="z-index: 2">
+                <h2>Welcome to <br> PKU Computational Scientific Imaging Group!</h2>
+                <div style="border: 2px solid #fff;display: inline-block;width: 140px;margin: 25px 0 54px"></div>
+                <h5 class="description">
+                    Computational Imaging is a vibrant and rapidly growing research area at the intersection of computer
+                    science, physical science, and instrumentation. Our group pioneers the development of advanced
+                    algorithms and innovative hardware to facilitate future scientific imaging at extreme scales. Our
+                    scope of work extends across multiple scientific disciplines, ranging from biomedical imaging to
+                    astronomy. Our research is inherently interdisciplinary and our extensive expertise bridges optics,
+                    deep learning, computer vision/graphics, statistical inference, and hardware design.
+                    <br> Our group is led by He Sun, Assistant Professor of Biomedical Engineering & Biophysics, and
+                    affiliated with the National Biomedical Imaging Center (NBIC) at Peking University. Please see our
+                    research page for more information or opportunities page for potential research positions.
+                </h5>
+<!--                <div class="banner-box description">-->
+<!--                    <span style="font-size: 24px">Opening:</span> We are open to self-motivated Postdoc / PhD / Master /-->
+<!--                    research interns candidates and-->
+<!--                    other potential collaboration.-->
+<!--                    <br> Please do not hesitate to contact us by emailing hesun@pku.edu.cn!-->
+<!--                </div>-->
+            </div>
 
-        <p class="content">Our group is led by <a href="https://hesunpu.github.io/"> He Sun</a>, Assistant Professor of Biomedical Engineering, and affiliated with the <a href="https://nbic.pku.edu.cn/zxgk/index.htm">National Biomedical Imaging Center (NBIC)</a> at Peking University. Please see our research page for more information or opportunities page for potential research positions.</p>
-
-      </div>
-
-
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
     </div>
-  </div>
+
+    <h3 class="w h-title">Project Highlights</h3>
+
+    <div class=" w carbox" style="overflow: hidden">
+        <div>
+            <img class="car-img" src="./image/card3.png" alt="">
+            <div class="car-info">
+                <span>
+                    Neural Born Series Operator for Biomedical Ultrasound Computed Tomography
+                </span>
+            </div>
+        </div>
+        <div>
+            <img class="car-img" src="./image/iccv-gif.gif" alt="">
+            <div class="car-info">
+                <span>
+                    Recovering a Molecule’s 3D Dynamics from Liquid-phase Electron Microscopy Movies
+                </span>
+            </div>
+        </div>
+        <div>
+            <img class="car-img" src="./image/space-gif.gif" alt="">
+            <div class="car-info">
+                <span>
+                    Reconstructing Satellites in 3D from Amateur Telescope Images
+                </span>
+            </div>
+        </div>
+        <div>
+            <img class="car-img" src="./image/EMDiffusion.png" alt="">
+            <div class="car-info">
+                <span>
+                    An Expectation-Maximization Algorithm for Training Clean Diffusion Models from Corrupted Observations
+                </span>
+            </div>
+        </div>
+        <div>
+            <img class="car-img" src="./image/card5.png" alt="">
+            <div class="car-info">
+                <span>
+                    Blind Inversion using Latent Diffusion Priors
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="w block-box">
+        <div class="block-bot block-bot-active" id="leftBtn"></div>
+        <div class="block-bot" id="rightBtn"></div>
+    </div>
+
+    <h3 class="w h-title" style="margin-top: 10px">News</h3>
+
+    <div style="width: 100vw;background: #FAFAFA;padding: 19px 0 60px;">
+        <!-- 新闻列表 -->
+        <div class="new-box w " >
+            <h4 class="new-title" style="display: inline;">
+                <span>·</span>
+                <span>Sep  2024</span>
+            </h4>&nbsp;&nbsp;
+            <span style="color: gray; text-decoration: underline; display: inline;">An Expectation-Maximization Algorithm for Training Clean Diffusion Models from Corrupted Observations</span>
+            <span style="color: gray; display: inline;"> gets accepted for publication at NeurIPS 2024.
+                <a href="https://arxiv.org/abs/2407.01014" target="_blank">[Paper]</a>
+                <a href="https://github.com/weiminbai/EMDiffusion" target="_blank">[Code]</a>
+            </span>
+        </div>
+        <div class="new-box w">
+            <h4 class="new-title" style="display: inline;">
+                <span>·</span>
+                <span>Aug 2024</span>
+            </h4>&nbsp;&nbsp;
+            <span style="color: gray; display: inline;">Weimin Bai, Zhijun Zeng, Yifei Wang, Siyi Chen attend IMSI Computational Imaging Workshop in Chicago. They give oral presentations on</span>
+            <span style="color: gray; text-decoration: underline; display: inline;">Diffusion Posterior Sampling with Inaccurate Priors or Physics</span>
+            <span style="color: gray; display: inline;">and</span>
+            <span style="color: gray; text-decoration: underline; display: inline;">Diffusion Posterior Sampling with Inaccurate Priors or Physics. </span>
+            <span style="color: gray; display: inline;"> <a href="https://www.imsi.institute/activities/computational-imaging/" target="_blank">[Resource]</a></span>
+        </div>
+
+        <div class="new-box w ">
+            <h4 class="new-title" style="display: inline;">
+                <span>·</span>
+                <span>July 2024</span>
+            </h4>&nbsp;&nbsp;
+            <span style="color: gray; display: inline;">Jinxin Liu, Yihang Zheng, Youjia Zheng join the group. Welcome!</span>
+        </div>
+        <div class="new-box w ">
+            <h4 class="new-title" style="display: inline;">
+                <span>·</span>
+                <span>July 2024</span>
+            </h4>&nbsp;&nbsp;
+            <span style="color: gray; display: inline;">
+                Congratulations to Enze Ye for winning the Presidential Scholarship at Peking University!
+            </span>
+        </div>
+        <div class="new-box w ">
+            <h4 class="new-title" style="display: inline;">
+                <span>·</span>
+                <span>Oct  2023</span>
+            </h4>&nbsp;&nbsp;
+            <span style="color: gray; display: inline;">
+                <span style="text-decoration: underline;">Recovering a Molecule's 3D Dynamics from Liquid-phase Electron Microscopy Movies</span>
+                gets accepted for publication at ICCV 2023.
+                <a href="https://arxiv.org/abs/2308.11927" target="_blank">[Paper]</a>
+                <a href="https://github.com/ai4imaging/tempor_code" target="_blank">[Code]</a>
+            </span>
+        </div>
+        <div class="new-box w ">
+            <h4 class="new-title" style="display: inline;">
+                <span>·</span>
+                <span>July 2023</span>
+            </h4>&nbsp;&nbsp;
+            <span style="color: gray; display: inline;">
+                Weimin Bai, Shaochi Ren, and Enze Ye join the group. Welcome!
+            </span>
+        </div>
+        <div class="new-box w " style="display: none;">
+            <h4 class="new-title" style="display: inline;">
+                <span>·</span>
+                <span>June 2023</span>
+            </h4>&nbsp;&nbsp;
+            <span style="color: gray; display: inline;">
+                He Sun co-organizes the
+                <span style="text-decoration: underline;">IEEE Computational Cameras and Displays (CCD) Workshop</span>in CVPR 2023.
+                <a href="https://ccd2023.github.io/" target="_blank">[Website]</a>
+            </span>
+        </div>
+        <div class="new-box w " style="display: none;">
+            <h4 class="new-title" style="display: inline;">
+                <span>·</span>
+                <span>Feb 2023</span>
+            </h4>&nbsp;&nbsp;
+            <span style="color: gray; display: inline;">
+                Zhiming Chang joins the group. Welcome!
+            </span>
+        </div>
+        <div class="new-box w " style="display: none;">
+            <h4 class="new-title" style="display: inline;">
+                <span>·</span>
+                <span>Jan  2023</span>
+            </h4>&nbsp;&nbsp;
+            <span style="color: gray; display: inline;">
+                <span style="text-decoration: underline;">Deep learning-assisted analysis of single molecule dynamics from liquid-phase electron microscopy</span>
+                published in Chemical Communications.
+            </span>
+        </div>
+        <div class="new-box w " style="display: none;">
+            <h4 class="new-title" style="display: inline;">
+                <span>·</span>
+                <span>Sep 2022</span>
+            </h4>&nbsp;&nbsp;
+            <span style="color: gray; display: inline;">
+                Yaqing Xu joins the group. Welcome!
+            </span>
+        </div>
+        <div class="new-box w " style="display: none;">
+            <h4 class="new-title" style="display: inline;">
+                <span>·</span>
+                <span>May 2022</span>
+            </h4>&nbsp;&nbsp;
+            <span style="color: gray; display: inline;">
+                He Sun starts his appointment at College of Future Technology, Peking University.
+            </span>
+        </div>
+        <div class="w">
+            <button id="moreBtn" style="border: none;cursor: pointer;width: 84px;height: 46px;font-size: 20px;color: #888888">
+                More
+            </button>
+        </div>
+    </div>
+
+
 </section>
 
+<style>
+    .swiper-button-prev::after {
+        content: '111';
+    }
 
+    .swiper-button-next::after {
+        content: '222';
+    }
 
-  <section class="news section" id="news">
-    <div data-aos="fade-up" data-aos-delay="200" class="container">
-      <h2 class="pre-wrap" style="margin-top: 0">News</h2>
-      <p class="news_item" style="white-space:pre-wrap;"><strong>Oct  2023: </strong>Enze Ye's <a href="https://ai4imaging.github.io/tempor/">Recovering a Molecule's 3D Dynamics from Liquid-phase Electron Microscopy Movies</a> accepted to ICCV 2023.</p>
-      <p class="news_item" style="white-space:pre-wrap;"><strong>July 2023: </strong>Weimin Bai, Shaochi Ren, Enze Ye joined the group as PhD students. Welcome!</p>
-      <p class="news_item" style="white-space:pre-wrap;"><strong>June 2023: </strong>He Sun co-organized the <a href="https://ccd2023.github.io/">IEEE Computational Cameras and Displays (CCD) Workshop</a> in CVPR 2023.</p>
-      <p class="news_item" style="white-space:pre-wrap;"><strong>Jan  2023: </strong><a href="https://pubs.rsc.org/en/content/articlelanding/2023/cc/d2cc05354c/unauth">Deep learning-assisted analysis of single molecule dynamics from liquid-phase electron microscopy</a> published in Chemical Communications.</p>
+    .swiper-button-next {
+        width: 38px;
+        height: 38px;
+        right: 134px;
+        z-index: 4;
+        background: url(./image/right.png) no-repeat center;
+    }
 
-    </div>
-  </section>
+    .swiper-button-prev {
+        width: 38px;
+        height: 38px;
+        left: 134px;
+        z-index: 4;
 
-  <footer class="container-fluid footer_section">
-    <p>
-      &copy; 2023 PCSIG
-    </p>
-  </footer>
-  <!-- footer section -->
-
-  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.js"></script>
-  <script type="text/javascript" src="js/tools.js"></script>
-
+        background: url(./image/left.png) no-repeat center;
+    }
+</style>
+<script src="./swiper/swiper-bundle.min.js"></script>
+<script src="./js/index.js"></script>
+<script src="./js/drow.js"></script>
 </body>
-
 </html>

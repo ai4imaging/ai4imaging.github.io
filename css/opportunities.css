@@ -1,0 +1,83 @@
+/* 定义通用的类名 */
+.swiper-container {
+    position: relative;
+    width: 100vw;
+}
+
+.swiper-slide img {
+    width: 100vw;
+    height: 700px;
+}
+
+.text-content {
+    color: #FFF;
+    position: absolute;
+    z-index: 3;
+    top: 126px;
+    width: 100vw;
+}
+
+.title {
+    font-size: 48px;
+    line-height: 40px;
+}
+
+.underline {
+    width: 108px;
+    height: 4px;
+    background: #FFF;
+    margin: 55px 0 44px;
+}
+
+.description {
+    font-family: "HarmonyOS Sans-Regular";
+    line-height: 30px;
+    font-size: 20px;
+}
+
+.section-title {
+    font-size: 30px;
+    line-height: 40px;
+    margin: 53px 0 30px;
+}
+
+.project-image {
+    width: 419px;
+    height: 377px;
+}
+
+.status {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 20px 0 12px;
+    color: #666666;
+    font-family: 'HarmonyOS Sans-Regular';
+}
+
+.project-description {
+    width: 778px;
+    height: 285px;
+    display: inline-block;
+    font-size: 20px;
+    line-height: 30px;
+    color: #666666;
+    font-family: 'HarmonyOS Sans-Regular';
+}
+
+.banner-box {
+    background: url("../image/bg-gray.png") no-repeat 100%;
+    padding: 19px 2px 0 28px;
+    width: 100%;
+    /*border: white dashed 1px;*/
+    height: 117px;
+    margin-top: 43px;
+    font-size: 20px;
+    line-height: 40px;
+    white-space: nowrap;
+    font-family: "HarmonyOS Sans-Regular"
+}
+
+.description1{
+    font-family: 'HarmonyOS Sans-Regular'!important;
+    font-weight:200;
+}
