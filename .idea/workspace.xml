@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ff612fb2-2d25-42f1-8f08-29211928ebfb" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ai4imaging.github.io.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ceshi/3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ceshi/ceshi.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ceshi/ceshi1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/common.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/font-awesome-4.7.0/HELP-US-OUT.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/font-awesome-4.7.0/css/font-awesome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/font-awesome-4.7.0/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/font-awesome-4.7.0/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/font-awesome-4.7.0/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/font-awesome-4.7.0/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/font-awesome-4.7.0/less/animated.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/font-awesome-4.7.0/less/bordered-pulled.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/font-awesome-4.7.0/less/core.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/font-awesome-4.7.0/less/fixed-width.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/font-awesome-4.7.0/less/font-awesome.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/font-awesome-4.7.0/less/icons.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/font-awesome-4.7.0/less/larger.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/font-awesome-4.7.0/less/list.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/font-awesome-4.7.0/less/mixins.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/font-awesome-4.7.0/less/path.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/font-awesome-4.7.0/less/rotated-flipped.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/font-awesome-4.7.0/less/screen-reader.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/font-awesome-4.7.0/less/stacked.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/font-awesome-4.7.0/less/variables.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/font-awesome-4.7.0/scss/_animated.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/font-awesome-4.7.0/scss/_bordered-pulled.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/font-awesome-4.7.0/scss/_core.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/font-awesome-4.7.0/scss/_fixed-width.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/font-awesome-4.7.0/scss/_icons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/font-awesome-4.7.0/scss/_larger.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/font-awesome-4.7.0/scss/_list.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/font-awesome-4.7.0/scss/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/font-awesome-4.7.0/scss/_path.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/font-awesome-4.7.0/scss/_rotated-flipped.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/font-awesome-4.7.0/scss/_screen-reader.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/font-awesome-4.7.0/scss/_stacked.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/font-awesome-4.7.0/scss/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/font-awesome-4.7.0/scss/font-awesome.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/header.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/opportunities.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/reserach.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/responsive.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/team.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/traching.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/direction.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/font/HarmonyOS_Sans/HarmonyOS_Sans_Black.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/font/HarmonyOS_Sans/HarmonyOS_Sans_Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/font/HarmonyOS_Sans/HarmonyOS_Sans_Light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/font/HarmonyOS_Sans/HarmonyOS_Sans_Medium.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/font/HarmonyOS_Sans/HarmonyOS_Sans_Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/font/HarmonyOS_Sans/HarmonyOS_Sans_Thin.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/font/HarmonyOS_Sans/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/head.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/3dopp-gif.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/EMDiffusion.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/Rbanner.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/Rbanner2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/Rbanner3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/Rbanner4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/b1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/b2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/b3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/b4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/b5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/b6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/banner1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/banner2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/banner3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/banner4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/bg-gray.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/book.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/card1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/card2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/card3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/card4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/card5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/down.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/emdiffusion.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/garybg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/iccv-gif.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/left.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/o1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/p1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/p2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/p3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/p4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/p5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/p6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/s1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/s2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/s3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/satellite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/space-gif.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/t1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/team1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/team10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/team10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/team11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/team12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/team13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/team14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/team15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/team16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/team17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/team18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/team2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/team2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/team23.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/team3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/team4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/team5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/team6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/team7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/team8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/team9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/traching1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/traching2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/up.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/yifei.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/yubo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/people/enze.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/people/hesun.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/people/huanyuyang.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/people/jinxin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/people/shaochi.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/people/shaochi_.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/people/xiangyi.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/people/yaqing.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/people/youjia.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/people/zhiming.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/people/冶恩泽.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/people/柏为民.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/pku.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/research/adaptive.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/research/deep.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/research/pipeline.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/research/result.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/research/yaqing.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/teaching0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/drow.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/jquery-3.4.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/opportunities.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/teaching.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/tools.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/opportunities.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/publication.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/research.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/slider.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swiper/swiper-bundle.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swiper/swiper-bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/teaching.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/team.html" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2pxd1qusLmlR9kEBtJHemNql8Uv" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "E:/demo/React-projects-for-beginners",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ff612fb2-2d25-42f1-8f08-29211928ebfb" name="Changes" comment="" />
+      <created>1733711448114</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1733711448114</updated>
+      <workItem from="1733711449116" duration="10745000" />
+      <workItem from="1734073672054" duration="5502000" />
+      <workItem from="1734334103659" duration="14351000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
