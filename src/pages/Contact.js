@@ -1,8 +1,6 @@
-import React from "react";
 import { Carousel } from "antd";
-import { Button, Divider } from "antd";
+import { Divider } from "antd";
 import { useRef } from "react";
-import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 
 
 const images = [
@@ -19,25 +17,6 @@ const ImageSlider = () => {
         <div className="flex justify-center py-10">
             <div className="w-4/5">
                 {/* Ant Design Carousel */}
-                <Button
-                    className='btnstyle'
-                    style={{ left: 150 }}
-                    onClick={() => {
-
-                        carouselEL.current.prev();
-                    }}
-                    icon={<LeftOutlined />}
-                ></Button>
-                <Button
-                    className='btnstyle'
-                    style={{ right: 150 }}
-                    onClick={() => {
-
-                        carouselEL.current.next();
-                    }}
-                    icon={<RightOutlined />}
-                ></Button>
-
                 <Carousel
 
                     autoplay

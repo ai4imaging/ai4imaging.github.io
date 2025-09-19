@@ -5,28 +5,96 @@ import { useState } from 'react';
 
 
 const newsItems = [
+    {
+    date: 'Sep 2025',
+    content: '[2/2] Two papers get accepted for NeurIPS 2025: Uni-Instruct: One-step Diffusion Model through Unified Diffusion Divergence Instruction (led by Yifei Wang & Weimin Bai)',
+    links: [
+      { href: 'https://arxiv.org/abs/2505.20755', text: '[Paper]' },
+      // { href: 'https://ai4scientificimaging.org/3DSatellites/', text: '[Website]' },
+      // { href: 'https://github.com/ai4imaging/3DSatellitesCode', text: '[Code]' },
+    ],
+  },
+    {
+    date: 'Sep 2025',
+    content: '[1/2] Two papers get accepted for NeurIPS 2025: FlowDAS: A Flow-Based Framework for Data Assimilation (led by Siyi Chen)',
+    links: [
+      { href: 'https://arxiv.org/abs/2501.16642', text: '[Paper]' },
+      // { href: 'https://ai4scientificimaging.org/3DSatellites/', text: '[Website]' },
+      { href: 'https://github.com/umjiayx/FlowDAS', text: '[Code]' },
+    ],
+  },
+    {
+    date: 'June 2025',
+    content: 'One paper gets accepted for IEEE TPAMI: Reconstructing Satellites in 3D from Amateur Telescope Images (led by Zhiming Chang)',
+    links: [
+      { href: 'https://arxiv.org/pdf/2404.18394', text: '[Paper]' },
+      { href: 'https://ai4scientificimaging.org/3DSatellites/', text: '[Website]' },
+      { href: 'https://github.com/ai4imaging/3DSatellitesCode', text: '[Code]' },
+    ],
+  },
+    {
+    date: 'June 2025',
+    content: 'New preprint: Dive3D: Diverse Distillation-based Text-to-3D Generation via Score Implicit Matching (led by Weimin Bai)',
+    links: [
+      { href: 'https://arxiv.org/abs/2407.01014', text: '[Paper]' },
+      { href: 'https://ai4scientificimaging.org/dive3d/', text: '[Website]' },
+      { href: 'https://github.com/ai4imaging/dive3d', text: '[Code]' },
+    ],
+  },
+    {
+    date: 'June 2025',
+    content: 'Congratulations to Weimin Bai for winning the Presidential Scholarship at Peking University!',
+  },
+    {
+    date: 'June 2025',
+    content: 'New preprint: Uni-Instruct: One-step Diffusion Model through Unified Diffusion Divergence Instruction (led by Yifei Wang)',
+    links: [
+      { href: 'https://arxiv.org/abs/2505.20755', text: '[Paper]' },
+    ],
+  },
+    {
+    date: 'May 2025',
+    content: 'New preprint: EM Generalist: A physics-driven diffusion foundation model for electron microscopy (led by Enze Ye)',
+    links: [
+      { href: 'https://www.researchsquare.com/article/rs-6602548/v1', text: '[Paper]' },
+        { href: 'http://generativemicroscope.com', text: '[Website]' },
+    ],
+  },
   {
     date: 'Jan  2025',
     content: 'He Sun is co-organizing the Machine Learning for Scientific Imaging Conference (MLSI) at Electronic Imaging Symposium 2025.',
     links: [
       { href: 'https://www.imaging.org/IST/IST/Conferences/EI/EI2025/Conference/C_MLSI.aspx', text: '[Program]' },
+
     ],
   },
-  {
-    date: 'Nov 2024',
-    content: 'New paper Reconstructing Satellites in 3D from Amateur Telescope Images (led by Zhiming)',
+    {
+    date: 'Jan  2025',
+    content: 'New preprint: FlowDAS: A Flow-Based Framework for Data Assimilation (led by Siyi Chen)',
     links: [
-      { href: 'https://arxiv.org/pdf/2404.18394', text: '[Paper]' },
+      { href: 'https://arxiv.org/abs/2501.16642', text: '[Paper]' },
+        { href: 'https://github.com/umjiayx/FlowDAS', text: '[Code]' },
+    ],
+  },
+    {
+    date: 'Jan  2025',
+    content: 'One paper gets accepted for ICASSP 2025: Learning Diffusion Model from Noisy Measurement using Principled Expectation-Maximization Method (led by Weimin Bai)',
+    links: [
+      { href: 'https://arxiv.org/pdf/2410.11241?', text: '[Paper]' },
+        { href: 'https://github.com/weiminbai/EMDiffusion', text: '[Code]' },
+
     ],
   },
   {
     date: 'Oct 2024',
     content: 'New paper OpenWaves: A Large-Scale Anatomically Realistic Ultrasound-CT Dataset for Benchmarking Neural Wave Equation Solvers (led by Zhijun & Youjia & Hao)',
-
+    links: [
+      { href: 'https://open-waves-usct.github.io/', text: '[Website]' },
+    ],
   },
   {
     date: 'Oct 2024',
-    content: 'New paper Blind Inversion using Latent Diffusion Priors (led by Weimin & Siyi)',
+    content: 'New preprint: Blind Inversion using Latent Diffusion Priors (led by Weimin Bai & Siyi Chen)',
     links: [
       { href: 'https://arxiv.org/pdf/2407.01027', text: '[Paper]'},
       { href: 'https://ai4scientificimaging.org/latentdem/', text: '[Website]'},
@@ -34,7 +102,7 @@ const newsItems = [
   },
   {
     date: 'Sep 2024',
-    content: 'New paper An Expectation-Maximization Algorithm for Training Clean Diffusion Models from Corrupted Observations gets accepted for publication at NeurIPS 2024.',
+    content: 'One paper gets accepted for NeurIPS 2024: An Expectation-Maximization Algorithm for Training Clean Diffusion Models from Corrupted Observations (led by Weimin Bai)',
     links: [
       { href: 'https://arxiv.org/abs/2407.01014', text: '[Paper]' },
       { href: 'https://github.com/weiminbai/EMDiffusion', text: '[Code]' },

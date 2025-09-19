@@ -13,16 +13,30 @@ const content = [
       "Partial Differential Equations (PDEs) are fundamental to modeling complex imaging physics, which is crucial for accurately interpreting signals from noisy data. Neural PDE solvers have recently transformed PDE-based physical modeling by offering exceptional approximation capabilities and enhanced computational efficiency. Our research leverages neural PDE methods to address unresolved challenges in scientific imaging, such as medical ultrasound, optical diffraction tomography of scattering tissues, and fluid metrology.",
     image: "./rawdata/application_fluid.gif",
     publications: [
+        {
+        title:
+          "FlowDAS: A Flow-Based Framework for Data Assimilation",
+        authors: "Siyi Chen, Yixuan Jia, Qing Qu, He Sun, and Jeffrey A. Fessler, NeurIPS, 2025",
+          links: [{
+            type: "Paper",
+            url: "https://arxiv.org/abs/2501.16642",
+        },
+        {
+            type: "Code",
+            url: "https://github.com/umjiayx/FlowDAS",
+        }],
+      },
       {
         image: "./rawdata/publication_openwaves.png",
         title:
           "OpenWaves: A Large-Scale Anatomically Realistic Ultrasound-CT Dataset for Benchmarking Neural Wave Equation Solvers",
         authors: "Zhijun Zeng, Youjia Zheng, Hao hu, Yubing Li, He Sun, arXiv, 2024",
-      },
-      {
-        title:
-          "FlowDAS: A Flow-Based Framework for Data Assimilation",
-        authors: "Siyi Chen, Yixuan Jia, Qing Qu, He Sun, and Jeffrey A. Fessler, arXiv, 2024"
+        links: [
+        {
+          type: "Website",
+          url: "https://open-waves-usct.github.io/",
+        }
+        ]
       },
 
     ],
@@ -33,19 +47,41 @@ const content = [
       "Generative AI provides powerful tools for modeling complex image distributions through deep neural networks. By defining data-driven priors for reconstructed images, generative AI surpasses traditional hand-crafted regularizers like sparsity and total variation, leading to superior image reconstruction quality. Our group is particularly focused on advancing deep generative modeling, 3D neural representations, and uncertainty quantification methods to redefine computational imaging.",
     image: "./rawdata/direction_generative.gif",
     publications: [
-      // {
-      //   title:
-      //     "Blind Inversion using Latent Diffusion Priors",
-      //   authors: "W Bai, S Chen, W Chen, H Sun - arXiv preprint arXiv:2407.01027, 2024",
-      //   links: [{
-      //     type: "Website",
-      //     url: "https://ai4scientificimaging.org/latentdem/",
-      //   }, {
-      //     type: "Paper",
-      //     url: "https://arxiv.org/pdf/2407.01027",
-
-      //   }],
-      // },
+        {
+        image: "./rawdata/publication_dive3d.png",
+        title:
+            "Uni-Instruct: One-step Diffusion Model through Unified Diffusion Divergence Instruction",
+        authors: "Yifei Wang, Weimin Bai, Colin Zhang, Debing Zhang, Weijian Luo, He Sun. NeurIPS, 2025",
+        links: [{
+            type: "Paper",
+            url: "https://arxiv.org/abs/2505.20755",
+        },
+        // {
+        //     type: "Website",
+        //     url: "https://ai4scientificimaging.org/dive3d/",
+        // },{
+        //     type: "Code",
+        //     url: "https://github.com/ai4imaging/dive3d",
+        // }
+        ],
+        year: 2025,
+    },
+        {
+        image: "./rawdata/publication_emgeneralist.png",
+        title:
+            "EM Generalist: A Physics-Driven Diffusion Foundation Model for Electron Microscopy",
+        authors: "Enze Ye, Chixiang Lu, Zixuan Jiang, Weimin Bai, Shaochi Ren, Chenyu Wang, Jinyang Zhang, Ruohua Shi, Lei Ma, Kun Song, Xiaojuan Qi, Haibo Jiang, He Sun. Preprint, 2025",
+        year: 2025,
+        links: [{
+            type: "Paper",
+            url: "https://www.researchsquare.com/article/rs-6602548/v1",
+        },
+        {
+            type: "Website",
+            url: "http://generativemicroscope.com",
+        }
+        ],
+    },
       {
         title:
           "An Expectation-Maximization Algorithm for Training Clean Diffusion Models from Corrupted Observations",
@@ -60,16 +96,23 @@ const content = [
         }
         ]
       },
-      {
-        title:
-          "Reconstructing Satellites in 3D from Amateur Telescope Images",
-        authors: "Zhiming Chang, Boyang Liu, Yifei Xia, Weimin Bai, Youming Guo, Boxin Shi, He Sun, arXiv, 2024",
-        links: [{
-          type: "Paper",
-          url: "https://arxiv.org/abs/2407.01014",
-        }
-        ]
-      },
+      // {
+      //   title:
+      //     "Reconstructing Satellites in 3D from Amateur Telescope Images",
+      //   authors: "Zhiming Chang, Boyang Liu, Yifei Xia, Youming Guo, Boxin Shi, He Sun, arXiv, 2024",
+      //   links: [{
+      //     type: "Paper",
+      //     url: "https://arxiv.org/abs/2407.01014",
+      //   },
+      //   {
+      //     type: "Website",
+      //     url: "https://ai4scientificimaging.org/3DSatellites/",
+      //   },{
+      //     type: "Code",
+      //     url: "https://github.com/ai4imaging/3DSatellitesCode",
+      //   }
+      //   ]
+      // },
       {
         title:
           "Recovering a Molecule's 3D Dynamics from Liquid-phase Electron Microscopy Movies",
@@ -107,24 +150,24 @@ const content = [
           }
         ]
       },
-      {
-        title:
-          "Deep probabilistic imaging: Uncertainty quantification and multi-modal solution characterization for computational imaging",
-        authors: "He Sun, Katherine L. Bouman, Proceedings of the AAAI Conference on Artificial Intelligence, 2021",
-        links: [{
-          type: "Paper",
-          url: "https://ojs.aaai.org/index.php/AAAI/article/view/16366",
-        },
-        {
-          type: "Website",
-          url: "http://imaging.cms.caltech.edu/dpi/",
-        },
-        {
-          type: "Code",
-          url: "https://github.com/HeSunPU/DPI",
-        }
-        ]
-      }
+      // {
+      //   title:
+      //     "Deep probabilistic imaging: Uncertainty quantification and multi-modal solution characterization for computational imaging",
+      //   authors: "He Sun, Katherine L. Bouman, Proceedings of the AAAI Conference on Artificial Intelligence, 2021",
+      //   links: [{
+      //     type: "Paper",
+      //     url: "https://ojs.aaai.org/index.php/AAAI/article/view/16366",
+      //   },
+      //   {
+      //     type: "Website",
+      //     url: "http://imaging.cms.caltech.edu/dpi/",
+      //   },
+      //   {
+      //     type: "Code",
+      //     url: "https://github.com/HeSunPU/DPI",
+      //   }
+      //   ]
+      // }
     ],
   },
   {
@@ -133,6 +176,23 @@ const content = [
       "Adaptive optics (AO) systems correct wavefront aberrations that significantly degrade image quality. Our group designs and builds state-of-the-art AO instruments and control software to enhance imaging performance in diverse applications, including telescopic imaging of astronomical objects through atmospheric turbulence and microscopy of strongly scattering biological tissues. ",
     image: "./rawdata/direction_ao.png",
     publications: [
+        {
+        title:
+          "Reconstructing Satellites in 3D from Amateur Telescope Images",
+        authors: "Zhiming Chang, Boyang Liu, Yifei Xia, Youming Guo, Boxin Shi, He Sun, IEEE TPAMI, 2025",
+        links: [{
+          type: "Paper",
+          url: "https://arxiv.org/abs/2407.01014",
+        },
+        {
+          type: "Website",
+          url: "https://ai4scientificimaging.org/3DSatellites/",
+        },{
+          type: "Code",
+          url: "https://github.com/ai4imaging/3DSatellitesCode",
+        }
+        ]
+      },
       {
         title:
           "High-contrast integral field spectrograph (HCIFS): multi-spectral wavefront control and reduced-dimensional system identification",
@@ -234,10 +294,10 @@ const Direction = () => {
   return (
     <div className="container mx-auto py-8 mb-10">
       {/* Heading Section */}
-      <Title level={2} className="text-center">
+      <h2 className="text-center text-xl md:text-3xl font-semibold">
         AI & Imaging Technologies
-      </Title>
-      <Paragraph className="text-justify text-gray-500 text-lg">
+      </h2>
+      <Paragraph className="text-justify text-gray-500 text-lg px-0 sm:px-0 md:px-0 lg:px-0 xl:px-0 max-md:px-[6%]">
         Imaging technology decodes wave-matter interactions and plays a pivotal
         role in advancing scientific discoveries. Our research is dedicated to
         developing cutting-edge artificial intelligence and automation tools to
@@ -251,7 +311,7 @@ const Direction = () => {
           <Row gutter={[16, 8]} align="middle">
             {/* 图片部分 */}
             <Col
-              xs={24} // 在移动端占满整行
+              xs={20} // 在移动端占满整行
               sm={4}
               md={4} // 中等屏幕占4列（总列数24，相当于2:8的比例）
               lg={4} // 大屏幕占4列
@@ -288,7 +348,7 @@ const Direction = () => {
 
             {/* 文字部分 */}
             <Col
-              xs={24} // 在移动端占满整行
+              xs={20} // 在移动端占满整行
               sm={19}
               md={19} // 中等屏幕占20列（总列数24，相当于2:8的比例）
               lg={19} // 大屏幕占20列
@@ -305,8 +365,8 @@ const Direction = () => {
 
           {/* 第二行：展开按钮和内容 */}
           <Row style={{ marginTop: "0px" }}>
-            <Col xs={24} md={4}></Col>
-            <Col xs={24} md={19}>
+            <Col xs={20} md={4}></Col>
+            <Col xs={20} md={19}>
               <Button
                 type="link"
                 className="flex items-center pl-0"

@@ -2,7 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-
+body {
+    margin: 0; /* 去掉 body 的默认 margin */
+    padding: 0; /* 可选：也去掉 padding */
+    box-sizing: border-box; /* 推荐：确保盒子模型更直观 */
+  }
+  
 .btnstyle {
     border: none!important;
     height: 45px!important;
@@ -34,4 +39,8 @@
     border-bottom: 1px solid #f0f0f0; /* 和 Ant Design 的分隔线一致 */
     width: 100%; /* 设置宽度 */
     margin: auto; /* 居中，设置上下间距 */
+}
+
+.custom-carousel .slick-dots {
+  margin-top: 64px;/* 缝隙大小可以根据需要调大 */
 }

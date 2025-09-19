@@ -9,7 +9,7 @@ const courses = [
     id: "23310067",
     title: "Inverse Problems and Computational Imaging",
     chineseTitle: "反问题和计算成像",
-    since: "Fall 2023/2024",
+    since: "Fall 2023/2024/2025",
     ta: "Weimin Bai, Enze Ye",
     description:
       "Computational imaging leverages algorithms to reconstruct signals of observed targets from indirect measurements. Its applications span various scientific and engineering fields, such as astronomical observation, medical ultrasound, X-ray computed tomography, and super-resolution microscopy. This course provides a comprehensive introduction to the fundamental theories, classical algorithms, and representative applications of computational imaging. It is organized into three core modules: optimization and regularization, statistical inference, and deep learning.",
@@ -46,13 +46,16 @@ const presentations = [
 ];
 
 const CourseCard = ({ course }) => {
-  const [expanded, setExpanded] = useState(false); // 用于控制展开和隐藏状态
-
   return (
     <Card
       hoverable
-      className="shadow-lg rounded-lg my-4 mx-auto"
-      style={{ padding: "20px", marginBottom: "20px", maxWidth: "1000px" }}
+      className="shadow-lg rounded-lg mx-auto"
+      style={{
+        padding: "20px",
+        marginBottom: "20px",
+        width: "80%", // 占总宽度的 80%
+        maxWidth: "1000px", // 限制最大宽度
+      }}
     >
       <div className="flex items-center justify-between mb-4">
         {/* 左侧课程ID */}
@@ -86,16 +89,18 @@ const CourseCard = ({ course }) => {
 };
 
 const PresentationCard = ({ presentation }) => {
-  const [expanded, setExpanded] = useState(false);
-
   return (
     <Card
       hoverable
-      className="shadow-lg rounded-lg my-4 mx-auto"
-      style={{ padding: "20px", marginBottom: "20px", maxWidth: "1000px" }}
+      className="shadow-lg rounded-lg mx-auto"
+      style={{
+        padding: "20px",
+        marginBottom: "20px",
+        width: "80%", // 占总宽度的 80%
+        maxWidth: "1000px", // 限制最大宽度
+      }}
     >
       <div className="flex items-center justify-between mb-4">
-
         {/* 左侧课程ID */}
         <div className="flex items-center text-gray-600">
           <ScheduleOutlined className="mr-2" />
@@ -106,7 +111,6 @@ const PresentationCard = ({ presentation }) => {
           <CalendarOutlined className="mr-2" />
           <span>{presentation.date}</span>
         </div>
-
       </div>
 
       {/* 演讲标题 */}
@@ -127,7 +131,7 @@ const PresentationCard = ({ presentation }) => {
       </div>
       {/* 演讲描述 */}
       <div className="text-center mt-4 text-gray-600">
-        <Paragraph ellipsis={!expanded ? { rows: 2 } : false}>
+        <Paragraph ellipsis={{ rows: 2 }}>
           {presentation.description}
         </Paragraph>
       </div>
@@ -137,23 +141,21 @@ const PresentationCard = ({ presentation }) => {
 
 const CourseList = () => {
   return (
-    <div className="py-10">
-
+    <div className="py-10 px-4">
       {/* Presentations Section */}
-      <Title level={3} className="mt-10 text-center" style={{ fontWeight: 'bold' }}>
+      <Title level={3} className="mt-10 text-center" style={{ fontWeight: "bold" }}>
         Science Lectures
       </Title>
       {presentations.map((presentation, index) => (
         <PresentationCard key={index} presentation={presentation} />
       ))}
       {/* Courses Section */}
-      <Title level={3} className="mt-12 text-center "style={{ fontWeight: 'bold' }}>
+      <Title level={3} className="mt-12 text-center" style={{ fontWeight: "bold" }}>
         Courses
       </Title>
       {courses.map((course) => (
         <CourseCard key={course.id} course={course} />
       ))}
-
     </div>
   );
 };

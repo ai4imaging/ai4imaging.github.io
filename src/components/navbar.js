@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from "react-router-dom";
-import { Menu } from "antd";
+import { Menu, Drawer, Button } from "antd";
+import { MenuOutlined } from '@ant-design/icons';
 
 const items = [
   {
@@ -40,13 +41,71 @@ const items = [
 ];
 
 const App = () => {
-  const [current, setCurrent] = useState(""); // 当前选中的菜单项
+  const [current, setCurrent] = useState("");
+  const [openKeys, setOpenKeys] = useState([]);
+  const [menuMode, setMenuMode] = useState("horizontal");
+  const [isMobile, setIsMobile] = useState(false);
+  const [drawerVisible, setDrawerVisible] = useState(false);
   const navigate = useNavigate();
 
+  useEffect(() => {
+    const handleResize = () => {
+      const mobile = window.innerWidth < 768;
+      setIsMobile(mobile);
+      if (mobile) {
+        setMenuMode("inline"); // 切换为竖排菜单
+      } else {
+        setMenuMode("horizontal"); // 切换为横向菜单
+        setDrawerVisible(false); // 关闭 Drawer
+      }
+    };
+    
+    handleResize(); // 立即执行一次，确保初始状态正确
+    window.addEventListener("resize", handleResize);
+    
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   const handleMenuSelect = ({ key }) => {
-    setCurrent(key); // 更新当前选中项
-    navigate(key); // 跳转到对应页面
+    setCurrent(key);
+    navigate(key);
+    if (isMobile) {
+      setDrawerVisible(false); // 在移动端点击后关闭 Drawer
+    }
   };
+
+  const handleMenuOpenChange = (keys) => {
+    setOpenKeys(keys);
+  };
+
+  const menuContent = (
+    <Menu
+      onClick={handleMenuSelect}
+      selectedKeys={[current]}
+      openKeys={openKeys}
+      onOpenChange={handleMenuOpenChange}
+      mode={menuMode}
+      items={items.map((item) => ({
+        ...item,
+        onTitleClick: () => {
+          // 如果点击的是"Research"，自动展开并选中第一个子项
+          if (item.key === "/direction") {
+            setCurrent(item.children[0].key); // 选择第一个子项
+            navigate(item.children[0].key); // 跳转到第一个子项
+            setOpenKeys([item.key]); // 展开Research子菜单
+          } else {
+            setCurrent(item.key); // 选择其他项
+            navigate(item.key); // 跳转
+          }
+        },
+      }))}
+      style={{
+        borderBottom: "none",
+        width: menuMode === "inline" ? "100%" : "auto",
+      }}
+      className="text-xl"
+    />
+  );
 
   return (
     <div
@@ -54,9 +113,11 @@ const App = () => {
         padding: "10px 30px",
         display: "flex",
         alignItems: "center",
-        justifyContent: "space-between", // 左右两侧对齐
+        justifyContent: "space-between",
+        flexDirection: isMobile ? "row" : "row",
       }}
     >
+      {/* Logo */}
       <div style={{ display: "flex", alignItems: "center" }}>
         <img
           src="/rawdata/logo_temp.png"
@@ -65,39 +126,28 @@ const App = () => {
         />
       </div>
 
-      {/* 右侧 Menu */}
-      <Menu
-        onClick={handleMenuSelect} // 处理点击事件
-        onSelect={handleMenuSelect} // 处理选中事件
-        selectedKeys={[current]} // 确保选中状态和当前路径保持同步
-        mode="horizontal"
-        items={items.map((item) => ({
-          ...item,
-          onTitleClick: () => {
-            if (!item.children) {
-              navigate(item.key);
-            } else if (item.key === "/direction") {
-              navigate("/direction");
-            }
-          },
-        }))}
-        style={{
-          display: "inline-block", // 菜单宽度只占文字的宽度
-          borderBottom: "none", // 去掉默认的下划线
-        }}
-        className="text-xl"
-      />
-      <style>
-        {`
-          .ant-menu-horizontal > .ant-menu-item-selected::after {
-            border-bottom: 2px solid #1890ff; /* 下划线颜色 */
-            transform: scaleX(1); /* 设置下划线长度与文字匹配 */
-          }
-          .ant-menu-horizontal > .ant-menu-item {
-            margin: 0 8px; /* 调整文字间距 */
-          }
-        `}
-      </style>
+      {/* Desktop Menu */}
+      {!isMobile && menuContent}
+
+      {/* Mobile Button */}
+      {isMobile && (
+        <>
+          <Button
+            type="text"
+            icon={<MenuOutlined style={{ fontSize: '24px' }} />}
+            onClick={() => setDrawerVisible(true)}
+          />
+          <Drawer
+            title="Menu"
+            placement="right"
+            onClose={() => setDrawerVisible(false)}
+            open={drawerVisible}
+            width={360}
+          >
+            {menuContent}
+          </Drawer>
+        </>
+      )}
     </div>
   );
 };
