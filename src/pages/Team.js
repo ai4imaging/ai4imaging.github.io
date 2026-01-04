@@ -39,6 +39,9 @@ const students = {
     undergraduate: [
         { name: "Zixuan Jiang", chinese: "蒋子轩", image: "./teams/zixuan.jpg" },
         { name: "Yifei Ma", chinese: "马艺菲", image: "./teams/yifeima.jpg" },
+        { name: "Binhong Gao", chinese: "高彬洪", image: "./teams/binhonggao.jpg" },
+        { name: "Linbo Cao", chinese: "曹林博", image: "./teams/linbocao.png" },
+        { name: "Xiangyou Li", chinese: "李相佑", image: "./teams/xiangyouli.jpg" },
     ],
     visiting: [
         { name: "Zhijun Zeng", chinese:"曾祉竣", image: "./teams/zhijun.jpg" },
@@ -110,9 +113,9 @@ const FacultyPage = () => {
                 <Row gutter={[16, 16]}>
                     {students.phd.map((student, index) => (
                         <Col key={index} xs={10} sm={8} md={4}>
-                            <Card
+                        <Card
                                 hoverable
-                                cover={<img alt={student.name} src={student.image} />}
+                                cover={<img className="team-card-img" alt={student.name} src={student.image} />}
                                 className="text-center"
                             >
                                 <div>
@@ -131,9 +134,9 @@ const FacultyPage = () => {
                 <Row gutter={[16, 16]}>
                     {students.master.map((student, index) => (
                         <Col key={index} xs={10} sm={8} md={4}>
-                            <Card
+                        <Card
                                 hoverable
-                                cover={<img alt={student.name} src={student.image} />}
+                                cover={<img className="team-card-img" alt={student.name} src={student.image} />}
                                 className="text-center"
                             >
                                 <div>
@@ -150,11 +153,11 @@ const FacultyPage = () => {
             <section className="mb-12">
                 <h2 className="mt-0 mb-4 text-lg md:text-2xl">Undergraduate Students</h2>
                 <Row gutter={[16, 16]}>
-                    {students.undergraduate.map((student, index) => (
-                        <Col key={index} xs={10} sm={8} md={4}>
+                {students.undergraduate.map((student, index) => (
+                    <Col key={index} xs={10} sm={8} md={4}>
                             <Card
                                 hoverable
-                                cover={<img alt={student.name} src={student.image} />}
+                                cover={<img className="team-card-img team-card-img-up" alt={student.name} src={student.image} />}
                                 className="text-center"
                             >
                                 <div>
@@ -175,7 +178,7 @@ const FacultyPage = () => {
                         <Col key={index} xs={10} sm={8} md={4}>
                             <Card
                                 hoverable
-                                cover={<img alt={student.name} src={student.image} />}
+                                cover={<img className="team-card-img" alt={student.name} src={student.image} />}
                                 className="text-center"
                             >
                                 <div>

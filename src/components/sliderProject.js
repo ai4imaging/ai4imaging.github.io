@@ -8,19 +8,34 @@ import {Link} from 'react-router-dom';
 // 定义卡片数据列表
 const cardData = [
   {
+    title: 'Vision-Language Models as Semantic and Spatial Critics for 3D Generation',
+    image: "./rawdata/project_vlm3d.jpeg",
+    url: "https://arxiv.org/abs/2511.14271"
+  },
+  {
+    title: 'Masked Auto-Regressive Variational Acceleration',
+    image: "./rawdata/project_marval.jpeg",
+    url: "https://arxiv.org/abs/2511.15190"
+  },
+  {
+    title: 'Real-Time Video Inverse Problem Solver with Distilled Diffusion Prior',
+    image: "./rawdata/project_instantvir.jpeg",
+    url: "https://arxiv.org/abs/2511.14208"
+  },
+  {
     title: 'Data Assimilation using Flow-based Generative Models',
     image: "./rawdata/application_fluid.gif",
-    url: ""
+    url: "https://arxiv.org/abs/2501.16642"
   },
   {
     title: '3D Astrophotography of Space Stations',
     image: './rawdata/project_satellite.png',
-    url: ""
+    url: "https://ai4scientificimaging.org/3DSatellites/"
   },
   {
     title: 'Neural Operators for Wave Imaging',
     image: '/rawdata/project_neural.png',
-    url: ""
+    url: "https://open-waves-usct.github.io/"
   },
   {
     title: '3D Reconstruction from Unposed Images',
@@ -30,7 +45,7 @@ const cardData = [
   {
     title: 'Learning Clean Diffusion Models from Corrupted Observations',
     image: './rawdata/project_diffusion.gif',
-    url: ""
+    url: "https://arxiv.org/abs/2407.01014"
   },
   {
     title: "Imaging a Molecule's 3D Dynamics with Electron Microscopy",
@@ -40,7 +55,7 @@ const cardData = [
   {
     title: 'Diverse and High-Quality Text-to-3D Generation',
     image: './rawdata/project_dive3d.png',
-    url: "https://arxiv.org/abs/2407.01014"
+    url: "https://arxiv.org/abs/2506.13594"
   },
     {
     title: 'Distilling One-step Generation Model',

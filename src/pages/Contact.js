@@ -9,6 +9,10 @@ const images = [
     "./rawdata/team3.jpg",
     "./rawdata/team4.jpg",
     "./rawdata/team5.jpg",
+    "./rawdata/team6.jpg",
+    "./rawdata/team8.jpg",
+    "./rawdata/team9.jpg",
+    "./rawdata/team10.jpg",
 ];
 
 const ImageSlider = () => {
@@ -30,7 +34,7 @@ const ImageSlider = () => {
                                 src={image}
                                 alt={`Slide ${index + 1}`}
                                 className="w-full rounded-lg object-cover"
-                                style={{ height: "600px" }} // Set the desired height for images
+                                style={{ height: "800px" }} // Set the desired height for images
                             />
                         </div>
                     ))}

@@ -6,12 +6,137 @@ const { Title, Text, Link } = Typography;
 // Sample data for the publications
 const publications = [
     {
+        image: "./rawdata/publication_instantvir.png",
+        title: "InstantViR: Real-Time Video Inverse Problem Solver with Distilled Diffusion Prior",
+        authors: "Weimin Bai, Suzhe Xu, Yiwei Ren, Jinhua Hao, Ming Sun, Wenzheng Chen, He Sun. arXiv, 2025",
+        links: [{
+            type: "Paper",
+            url: "https://arxiv.org/abs/2511.14208",
+        },
+        {
+            type: "Website",
+            url: "https://ai4scientificimaging.org/instantvir",
+        }
+        ],
+        year: 2025,
+    },
+    {
+        image: "./rawdata/publication_marval.png",
+        title: "Masked Auto-Regressive Variational Acceleration:Fast Inference Makes Practical Reinforcement Learning",
+        authors: "Yuxuan Gu, Weimin Bai, Yifei Wang, Weijian Luo, He Sun. arXiv, 2025",
+        links: [{
+            type: "Paper",
+            url: "https://arxiv.org/abs/2511.15190",
+        },
+        ],
+        year: 2025,
+    },
+    {
+        image: "./rawdata/publication_flowodt.png",
+        title: "Pose-Free 3D Quantitative Phase Imaging of Flowing Cellular Populations",
+        authors: "Enze Ye, Wei Lin, Shaochi Ren, Yakun Liu, Xiaoping Li, Hao Wang, He Sun, Feng Pan. arXiv, 2025",
+        links: [{
+            type: "Paper",
+            url: "https://arxiv.org/abs/2509.04848v1",
+        },
+        ],
+        year: 2025,
+    },
+    {
+        image: "./rawdata/publication_openwaves.png",
+        title:
+            "OpenBreastUS: Benchmarking Neural Operators for Wave Imaging Using Breast Ultrasound Computed Tomography",
+        authors: "Zhijun Zeng, Youjia Zheng, Hao Hu, Zeyuan Dong, Yihang Zheng, Xinliang Liu, Jinzhuo Wang, Zuoqiang Shi, Linfeng Zhang, Yubing Li, He Sun. arXiv, 2025",
+        year: 2025,
+        links: [
+            {
+          type: "Paper",
+          url: "https://arxiv.org/abs/2507.15035",
+        },
+        {
+          type: "Website",
+          url: "https://open-waves-usct.github.io/",
+        }
+        ]
+    },
+    {
+        image: "./rawdata/publication_nwi.png",
+        title:
+            "In vivo 3D ultrasound computed tomography of musculoskeletal tissues with generative neural physics",
+        authors: "Zhijun Zeng, Youjia Zheng, Chang Su, Qianhang Wu, Hao Hu, Zeyuan Dong, Shan Gao, Yang Lv, Rui Tang, Ligang Cui, Zhiyong Hou, Weijun Lin, Zuoqiang Shi, Yubing Li, He Sun. arXiv, 2025",
+        year: 2025,
+        links: [
+            {
+          type: "Paper",
+          url: "https://arxiv.org/abs/2508.12226",
+        },
+        ]
+    },
+    {
+        image: "./rawdata/publication_dive3d.png",
+        title:
+            "Dive3D: Diverse Distillation-based Text-to-3D Generation via Score Implicit Matching",
+        authors: "Weimin Bai, Yubo Li, Weijian Luo, Wenzheng Chen, He Sun. arxiv, 2025",
+        links: [{
+            type: "Paper",
+            url: "https://arxiv.org/abs/2506.13594",
+        },
+        {
+            type: "Website",
+            url: "https://ai4scientificimaging.org/dive3d/",
+        },{
+            type: "Code",
+            url: "https://github.com/ai4imaging/dive3d",
+        }
+        ],
+        year: 2025,
+    },
+    {
+        image: "./rawdata/publication_vlm3d.png",
+        title:
+            "Vision–Language Models as Differentiable Semantic and Spatial Rewards for Text-to-3D Generation",
+        authors: "Weimin Bai, Yubo Li, Wenzheng Chen, Weijian Luo, He Sun. arXiv, 2025",
+        links: [{
+            type: "Paper",
+            url: "https://arxiv.org/abs/2509.15772",
+        },
+        {
+            type: "Website",
+            url: "https://ai4scientificimaging.org/vlm3d/",
+        },{
+            type: "Code",
+            url: "https://github.com/ai4imaging/vlm3d",
+        }
+        ],
+        year: 2025,
+    },
+    {
+        image: "./rawdata/publication_emgeneralist.png",
+        title:
+            "EM Generalist: A Physics-Driven Diffusion Foundation Model for Electron Microscopy",
+        authors: "Enze Ye, Chixiang Lu, Zixuan Jiang, Weimin Bai, Shaochi Ren, Chenyu Wang, Jinyang Zhang, Ruohua Shi, Lei Ma, Kun Song, Xiaojuan Qi, Haibo Jiang, He Sun. Preprint, 2025",
+        year: 2025,
+        links: [{
+            type: "Paper",
+            url: "https://www.researchsquare.com/article/rs-6602548/v1",
+        },
+        {
+            type: "Website",
+            url: "http://generativemicroscope.com",
+        }
+        ],
+    },
+    {
         image: "./rawdata/publication_uniinstruct.png",
         title: "Uni-Instruct: One-step Diffusion Model through Unified Diffusion Divergence Instruction",
         authors: "Yifei Wang, Weimin Bai, Colin Zhang, Debing Zhang, Weijian Luo, He Sun. NeurIPS, 2025",
         links: [{
             type: "Paper",
             url: "https://arxiv.org/abs/2505.20755",
+        },
+            {
+            type: "Code",
+            url: "https://github.com/a-little-hoof/Uni_Instruct",
         },
         ],
         year: 2025,
@@ -30,48 +155,6 @@ const publications = [
             url: "https://github.com/umjiayx/FlowDAS",
         }],
         year: 2025,
-    },
-    {
-        image: "./rawdata/publication_dive3d.png",
-        title:
-            "Dive3D: Diverse Distillation-based Text-to-3D Generation via Score Implicit Matching",
-        authors: "Weimin Bai, Yubo Li, Weijian Luo, Wenzheng Chen, He Sun. arxiv, 2025",
-        links: [{
-            type: "Paper",
-            url: "https://arxiv.org/abs/2407.01014",
-        },
-        {
-            type: "Website",
-            url: "https://ai4scientificimaging.org/dive3d/",
-        },{
-            type: "Code",
-            url: "https://github.com/ai4imaging/dive3d",
-        }
-        ],
-        year: 2025,
-    },
-    {
-        image: "./rawdata/publication_vlm3d.png",
-        title:
-            "Vision–Language Models as Differentiable Semantic and Spatial Rewards for Text-to-3D Generation",
-        authors: "Weimin Bai, Yubo Li, Wenzheng Chen, Weijian Luo, He Sun. Preprint, 2025",
-        year: 2025,
-    },
-    {
-        image: "./rawdata/publication_emgeneralist.png",
-        title:
-            "EM Generalist: A Physics-Driven Diffusion Foundation Model for Electron Microscopy",
-        authors: "Enze Ye, Chixiang Lu, Zixuan Jiang, Weimin Bai, Shaochi Ren, Chenyu Wang, Jinyang Zhang, Ruohua Shi, Lei Ma, Kun Song, Xiaojuan Qi, Haibo Jiang, He Sun. Preprint, 2025",
-        year: 2025,
-        links: [{
-            type: "Paper",
-            url: "https://www.researchsquare.com/article/rs-6602548/v1",
-        },
-        {
-            type: "Website",
-            url: "http://generativemicroscope.com",
-        }
-        ],
     },
     {
         image: "./rawdata/publication_satellite.png",
@@ -107,19 +190,7 @@ const publications = [
         ],
         year: 2025,
     },
-    {
-        image: "./rawdata/publication_openwaves.png",
-        title:
-            "OpenWaves: A Large-Scale Anatomically Realistic Ultrasound-CT Dataset for Benchmarking Neural Wave Equation Solvers",
-        authors: "Zhijun Zeng, Youjia Zheng, Hao hu, Yubing Li, He Sun. arXiv, 2024",
-        year: 2024,
-        links: [
-        {
-          type: "Website",
-          url: "https://open-waves-usct.github.io/",
-        }
-        ]
-    },
+
     {
         image: "./rawdata/publication_blind.png",
         title:

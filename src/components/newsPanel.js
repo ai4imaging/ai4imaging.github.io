@@ -6,6 +6,15 @@ import { useState } from 'react';
 
 const newsItems = [
     {
+    date: 'Dec 2025',
+    content: 'One paper gets accepted for IEEE TIP: Blind Inversion using Latent Diffusion Priors (led by Weimin Bai & Siyi Chen)',
+    links: [
+      { href: 'https://arxiv.org/abs/2407.01027', text: '[Paper]' },
+      { href: 'https://ai4scientificimaging.org/latentdem/', text: '[Website]' },
+      { href: 'https://github.com/ai4imaging/latentdem', text: '[Code]' },
+    ],
+  },
+    {
     date: 'Sep 2025',
     content: '[2/2] Two papers get accepted for NeurIPS 2025: Uni-Instruct: One-step Diffusion Model through Unified Diffusion Divergence Instruction (led by Yifei Wang & Weimin Bai)',
     links: [
@@ -46,13 +55,6 @@ const newsItems = [
     content: 'Congratulations to Weimin Bai for winning the Presidential Scholarship at Peking University!',
   },
     {
-    date: 'June 2025',
-    content: 'New preprint: Uni-Instruct: One-step Diffusion Model through Unified Diffusion Divergence Instruction (led by Yifei Wang)',
-    links: [
-      { href: 'https://arxiv.org/abs/2505.20755', text: '[Paper]' },
-    ],
-  },
-    {
     date: 'May 2025',
     content: 'New preprint: EM Generalist: A physics-driven diffusion foundation model for electron microscopy (led by Enze Ye)',
     links: [
@@ -66,14 +68,6 @@ const newsItems = [
     links: [
       { href: 'https://www.imaging.org/IST/IST/Conferences/EI/EI2025/Conference/C_MLSI.aspx', text: '[Program]' },
 
-    ],
-  },
-    {
-    date: 'Jan  2025',
-    content: 'New preprint: FlowDAS: A Flow-Based Framework for Data Assimilation (led by Siyi Chen)',
-    links: [
-      { href: 'https://arxiv.org/abs/2501.16642', text: '[Paper]' },
-        { href: 'https://github.com/umjiayx/FlowDAS', text: '[Code]' },
     ],
   },
     {
