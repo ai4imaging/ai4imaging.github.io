@@ -1,7 +1,7 @@
 import React from "react";
 import { Card, Row, Col, Typography } from "antd";
 
-const { Title, Paragraph } = Typography;
+const { Paragraph } = Typography;
 
 const sections = [
     {

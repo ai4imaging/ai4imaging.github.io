@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Card, Button, Typography, Divider } from "antd";
+import React from "react";
+import { Card, Button, Typography } from "antd";
 import { ScheduleOutlined, YoutubeOutlined, CalendarOutlined, BookOutlined } from "@ant-design/icons";
 
 const { Title, Paragraph, Link } = Typography;

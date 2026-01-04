@@ -1,6 +1,5 @@
 import React from 'react';
 import { Carousel } from 'antd';
-import { Card } from 'antd';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import {Link} from 'react-router-dom';

@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState } from "react";
 import { Row, Col, Typography, Card, List, Button } from "antd";
 import { DownOutlined, RightOutlined } from "@ant-design/icons";
 
@@ -230,58 +230,6 @@ const content = [
     ],
   },
 ];
-
-const SelectedPublications = ({ publications, expanded, onToggle }) => (
-  <div>
-    <Button
-      type="link"
-      className="flex items-center pl-0"
-      onClick={onToggle}
-    >
-      {expanded ? <DownOutlined /> : <RightOutlined />}
-      <span className="ml-2 text-lg font-bold">Selected Publications</span>
-    </Button>
-    {expanded && publications && publications.length > 0 ? (
-      <List
-        size="small"
-        className="mt-2"
-        bordered={false}
-        dataSource={publications}
-        renderItem={(pub) => (
-          <List.Item>
-            <div>
-              {/* Article Title */}
-              <h4 className="font-bold text-base my-0">{pub.title}</h4>
-
-              {/* Authors */}
-              <p className="text-gray-600 text-sm my-0">{pub.authors}</p>
-
-              {/* Links (PDF, Website, etc.) */}
-              <div className="flex space-x-4 p-0">
-                {pub.links && (
-                  pub.links.map((link, index) => (
-                    <a
-                      key={index}
-                      href={link.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-blue-500 underline text-sm"
-                    >
-                      {link.type}
-                    </a>
-                  ))
-                )}
-              </div>
-
-            </div>
-          </List.Item>
-        )}
-      />
-    ) : expanded ? (
-      <p className="mt-4 text-gray-500 italic">No publications available.</p>
-    ) : null}
-  </div>
-);
 
 
 const Direction = () => {
