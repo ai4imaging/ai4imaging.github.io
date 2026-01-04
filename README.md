@@ -1,43 +1,6 @@
-# AI4Imaging Lab Website
+# Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## 🚀 部署到GitHub Pages
-
-### 自动部署（推荐）
-
-1. **创建GitHub仓库**
-   - 在GitHub上创建一个新仓库
-   - 仓库名称建议为：`yourusername.github.io` （用于个人主页）或任意名称
-
-2. **上传项目到GitHub**
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial commit"
-   git branch -M main
-   git remote add origin https://github.com/yourusername/your-repo-name.git
-   git push -u origin main
-   ```
-
-3. **启用GitHub Pages**
-   - 进入GitHub仓库的Settings > Pages
-   - Source选择"GitHub Actions"
-   - 推送代码后会自动部署
-
-### 手动部署
-
-如果不想使用GitHub Actions，也可以手动部署：
-
-```bash
-# 构建项目
-npm run build
-
-# 部署到gh-pages分支
-npm run deploy
-```
-
-然后在GitHub仓库设置中启用Pages，选择source为"gh-pages branch"。
 
 ## Available Scripts
 
