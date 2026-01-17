@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ai4imaging.github.io/static/css/main.1a8cfb2d.css",
-    "main.js": "/ai4imaging.github.io/static/js/main.bffaacad.js",
+    "main.js": "/ai4imaging.github.io/static/js/main.76c1e615.js",
     "static/media/primeicons.svg": "/ai4imaging.github.io/static/media/primeicons.305db783e966ca4304db.svg",
     "static/media/primeicons.eot": "/ai4imaging.github.io/static/media/primeicons.d44157bdfa026dc877af.eot",
     "static/media/primeicons.woff": "/ai4imaging.github.io/static/media/primeicons.10d3152104f2208ac82a.woff",
@@ -13,10 +13,10 @@
     "static/media/slick.woff": "/ai4imaging.github.io/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/ai4imaging.github.io/index.html",
     "main.1a8cfb2d.css.map": "/ai4imaging.github.io/static/css/main.1a8cfb2d.css.map",
-    "main.bffaacad.js.map": "/ai4imaging.github.io/static/js/main.bffaacad.js.map"
+    "main.76c1e615.js.map": "/ai4imaging.github.io/static/js/main.76c1e615.js.map"
   },
   "entrypoints": [
     "static/css/main.1a8cfb2d.css",
-    "static/js/main.bffaacad.js"
+    "static/js/main.76c1e615.js"
   ]
 }
