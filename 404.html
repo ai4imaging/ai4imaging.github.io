@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <script>
+        // 1. 定义项目映射表：左边是全小写，右边是正确的大小写仓库名
+        var projectMap = {
+            "marval-rl": "MARVAL-RL",
+            "instantvir": "InstantViR",
+            "latentdem": "LatentDEM",
+            "dive3d": "Dive3D",
+            "openwaves": "OpenWaves",
+            "vlm3d": "VLM3D",
+            "reconstructingsatellites": "ReconstructingSatellites",
+            "3dsatellites": "3DSatellites",
+            "tempor": "tempor"
+        };
+
+        // 2. 获取当前访问的路径
+        // 例如访问 /vlm3d/abc，pathParts[1] 就是 "vlm3d"
+        var pathParts = window.location.pathname.split('/');
+        var requestedProject = pathParts[1]; 
+
+        if (requestedProject) {
+            var lowerProject = requestedProject.toLowerCase();
+
+            // 3. 检查是否在我们的映射表中
+            if (projectMap.hasOwnProperty(lowerProject)) {
+                var correctCase = projectMap[lowerProject];
+                
+                // 构造新的 URL
+                // 拼接域名 + 正确的项目名 + 原路径中剩余的部分
+                var newPath = "/" + correctCase + "/";
+                
+                // 如果用户还输入了子路径（如 /vlm3d/paper.pdf），也一并保留
+                if (pathParts.length > 2) {
+                    newPath += pathParts.slice(2).join('/');
+                }
+
+                window.location.replace(newPath);
+            }
+        }
+    </script>
+    <style>
+        body { font-family: sans-serif; text-align: center; padding-top: 50px; color: #666; }
+        .spinner { border: 4px solid #f3f3f3; border-top: 4px solid #3498db; border-radius: 50%; width: 30px; height: 30px; animation: spin 1s linear infinite; margin: 20px auto; }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    </style>
+</head>
+<body>
+    <div id="message">
+        <h2>Redirecting to the correct project page...</h2>
+        <div class="spinner"></div>
+        <p>If you are not redirected, <a href="/">click here to go home</a>.</p>
+    </div>
+</body>
+</html>
