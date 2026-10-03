@@ -4,7 +4,10 @@
     <meta charset="utf-8">
     <title>Redirecting...</title>
     <script>
-        // 1. 定义项目映射表：左边是全小写，右边是正确的大小写仓库名
+        var externalRedirects = {
+            "adaptive_optics": "https://congzhou235-prog.github.io/iccp-adaptive-optics-2026/"
+        };
+
         var projectMap = {
             "marval-rl": "MARVAL-RL",
             "instantvir": "InstantViR",
@@ -15,44 +18,32 @@
             "reconstructingsatellites": "ReconstructingSatellites",
             "3dsatellites": "3DSatellites",
             "tempor": "tempor",
-            "hesun":"HeSun"
+            "hesun": "HeSun"
         };
 
-        // 2. 获取当前访问的路径
-        // 例如访问 /vlm3d/abc，pathParts[1] 就是 "vlm3d"
         var pathParts = window.location.pathname.split('/');
-        var requestedProject = pathParts[1]; 
+        var requestedProject = pathParts[1];
 
         if (requestedProject) {
             var lowerProject = requestedProject.toLowerCase();
 
-            // 3. 检查是否在我们的映射表中
-            if (projectMap.hasOwnProperty(lowerProject)) {
+            if (externalRedirects.hasOwnProperty(lowerProject)) {
+                window.location.replace(externalRedirects[lowerProject]);
+            } else if (projectMap.hasOwnProperty(lowerProject)) {
                 var correctCase = projectMap[lowerProject];
                 var newPath = "";
 
-                // === 修改部分：针对 hesun 项目做特殊的中英文重定向 ===
                 if (lowerProject === "hesun") {
-                    // 判断是否有真正的子路径（过滤掉 URL 尾部的空字符串）
                     var hasSubPath = pathParts.slice(2).filter(function(part) { return part !== ""; }).length > 0;
-                    
-                    if (!hasSubPath) {
-                        // 用户仅输入了 /hesun 或 /hesun/，跳转到中文版 index_zh.html
-                        newPath = "/HeSun/index_zh.html";
-                    } else {
-                        // 如果有子路径（如图片 /hesun/images/logo.png），正常拼接到大写的 /HeSun/
-                        newPath = "/HeSun/" + pathParts.slice(2).join('/');
-                    }
+                    newPath = hasSubPath
+                        ? "/HeSun/" + pathParts.slice(2).join('/')
+                        : "/HeSun/index_zh.html";
                 } else {
-                    // 其它项目的通用重定向逻辑
                     newPath = "/" + correctCase + "/";
-                    
-                    // 如果用户还输入了子路径（如 /vlm3d/paper.pdf），也一并保留
                     if (pathParts.length > 2) {
                         newPath += pathParts.slice(2).join('/');
                     }
                 }
-                // ================================================
 
                 window.location.replace(newPath);
             }
@@ -61,7 +52,7 @@
     <style>
         body { font-family: sans-serif; text-align: center; padding-top: 50px; color: #666; }
         .spinner { border: 4px solid #f3f3f3; border-top: 4px solid #3498db; border-radius: 50%; width: 30px; height: 30px; animation: spin 1s linear infinite; margin: 20px auto; }
-        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        @keyframes spin { 100% { transform: rotate(360deg); } }
     </style>
 </head>
 <body>
